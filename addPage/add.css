@@ -45,7 +45,6 @@ body
     color: rgb(218, 218, 218);
     font-size: 20px;
     border-radius: 10px;
-    border-color: black;
 }
 .boxNumberOption:active
 {
@@ -93,6 +92,25 @@ body
 }
 
 #itemDescTextArea:focus
+{
+    outline: 0;
+    border-width: 3px;
+    border-color: black;
+}
+
+#amountText
+{
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#amountText:focus
 {
     outline: 0;
     border-width: 3px;
