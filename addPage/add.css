@@ -32,7 +32,7 @@ body
 
 #boxesButtons
 {
-    margin-left: 100px;
+    margin-left: 175px;
     width: 150px;
     float: left;
 }
@@ -46,10 +46,18 @@ body
     font-size: 20px;
     border-radius: 10px;
 }
+
 .boxNumberOption:active
 {
     outline: 0;
     border-color: black;
+}
+
+.boxNumberOption:hover
+{
+    outline: 0;
+    border-color: black;
+    cursor: pointer;
 }
 
 .boxNumberOption:first-child
@@ -76,14 +84,17 @@ body
     border-color: black;
 }
 
-#itemDescTextArea
+#itemNameText:hover
 {
-    width: 300px;
-    height: 200px;
+    outline: 0;
+    border-width: 3px;
+    border-color: black;
 }
 
 #itemDescTextArea
 {
+    width: 300px;
+    height: 200px;
     font-size: 20px;
     border-radius: 10px;
     float: left;
@@ -92,6 +103,13 @@ body
 }
 
 #itemDescTextArea:focus
+{
+    outline: 0;
+    border-width: 3px;
+    border-color: black;
+}
+
+#itemDescTextArea:hover
 {
     outline: 0;
     border-width: 3px;
@@ -115,4 +133,34 @@ body
     outline: 0;
     border-width: 3px;
     border-color: black;
+}
+
+#amountText:hover
+{
+    outline: 0;
+    border-width: 3px;
+    border-color: black;
+}
+
+
+#addButton
+{
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    float: left;
+    border-radius: 10px;
+    border-color: black;
+}
+
+#addButton:hover
+{
+    border-width: 3px;
+    cursor: pointer;
+}
+
+#addButton:focus
+{
+    outline: 0;
 }
