@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dodaj item</title>
+    <title>Dodaj przedmiot</title>
     <link rel="stylesheet" href="add.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
     <script src="add.js"></script>
 </head>
 <body>
-    <div id="upperBar">Dodaj item</div>
+    <div id="upperBar">Dodaj przedmiot</div>
 
     <div id="centralContainer">
         <div id="boxesButtons">
-            <input class="boxNumberOption" id="boxNumberFirst" type="button" value="Numer pudełka" onclick="showBoxes()">
+            <input class="boxNumberOption" type="button" value="Numer pudełka" onclick="showBoxes()">
         </div>
 
         <input type="text" placeholder="Nazwa przedmiotu" id="itemNameText">
@@ -23,7 +23,7 @@
 
         <input type="text" id="amountText" placeholder="Ilość">
 
-        <input type="button" value="Dodaj" id="addButton">
+        <input type="button" value="Dodaj" id="addButton" onclick="sendItem()">
 
     </div>
 </body>

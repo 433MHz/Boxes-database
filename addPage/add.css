@@ -60,6 +60,11 @@ body
     cursor: pointer;
 }
 
+.boxNumberOption:focus
+{
+    outline: 0;
+}
+
 .boxNumberOption:first-child
 {
     margin-top: 50px;
