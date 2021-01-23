@@ -19,3 +19,15 @@ body
     letter-spacing: 4px;
     text-transform: uppercase;
 }
+
+#centralContainer
+{
+    width: 1500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: rgb(161, 161, 161);
+    text-align: center;
+    padding-top: 180px;
+}
