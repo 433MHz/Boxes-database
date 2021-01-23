@@ -19,3 +19,47 @@ body
     letter-spacing: 4px;
     text-transform: uppercase;
 }
+
+#centralContainer
+{
+    width: 1500px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: rgb(167, 167, 167);
+}
+
+#boxesButtons
+{
+    margin-left: 100px;
+    width: 150px;
+    float: left;
+}
+
+.boxNumberOption
+{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(25, 122, 41);
+    color: rgb(218, 218, 218);
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.boxNumberOption:first-child
+{
+    margin-top: 50px;
+}
+
+#itemNameText
+{
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+}
