@@ -1,6 +1,6 @@
-var buttonsSelect1;
-var buttonsSelect2;
-var buttonsSelect3;
+var buttonsSelect1 = 1;
+var buttonsSelect2 = 1;
+var buttonsSelect3 = 1;
 
 
 function buttons1(button){
@@ -58,37 +58,45 @@ function buttons2(button){
     switchButtons();
 }
 
-function buttons3(button){
-    if(button === 1){
+function buttons3(){
+    var button = document.getElementById("button_3_1");
+
+    if(buttonsSelect3 == 1){
+        button.value = "Malejąco";
         buttonsSelect3 = 2;
-    } 
-    else if(button === 2){
+    }
+    else if(buttonsSelect3 == 2){
+        button.value = "Rosnąco";
         buttonsSelect3 = 1;
     }
     else{}
-
     switchButtons();
 }
 
 
 function switchButtons(){
-    var buttons = ["button_1_1","button_1_2","button_1_3","button_2_1","button_2_2","button_2_3","button_2_4","button_2_5","button_2_6","button_2_7","button_3_1"];
+    var buttons = ["button_1_1","button_1_2","button_1_3","button_2_1","button_2_2","button_2_3","button_2_4","button_2_5","button_2_6","button_2_7"];
     buttons.forEach(iterator);
 
     function iterator(value){
-        document.getElementById(value).classList.add('buttons1');
-        document.getElementById(value).classList.remove('buttons2');
+        document.getElementById(value).className = "buttons1";
     }
 
     var buttonsSelect1_1 = "button_1_" + buttonsSelect1;
     var buttonsSelect2_1 = "button_2_" + buttonsSelect2;
-    var buttonsSelect3_1 = "button_3_" + buttonsSelect3;
 
-    var buttonsSelect = [buttonsSelect1_1, buttonsSelect2_1, buttonsSelect3_1];
+    var buttonsSelect = [buttonsSelect1_1, buttonsSelect2_1];
     buttonsSelect.forEach(iterator2);
 
     function iterator2(value){
-        document.getElementById(value).classList.remove("buttons1");
-        document.getElementById(value).classList.add("buttons2");
+        document.getElementById(value).className = "buttons2"
     }
+
+
+    console.log(buttonsSelect1);
+    console.log(buttonsSelect2);
+    console.log(buttonsSelect3);
 }
+
+
+window.onload = switchButtons();
