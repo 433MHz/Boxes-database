@@ -48,3 +48,13 @@ body
     margin-left: 50px;
     margin-top: 15px;
 }
+
+#categoryButton
+{
+    margin-right: 100px;
+}
+
+#boxDescButton
+{
+    margin-right: 50px;
+}
