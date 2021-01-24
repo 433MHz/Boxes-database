@@ -7,25 +7,28 @@
     <link rel="stylesheet" href="find.css">
 </head>
 <body>
-    <div id="upperBar">Znajdź</div>
+    <div id="upperBar">Znajdź przedmiot</div>
     <div id="topContainer"> 
         <input type="text" id="findText" placeholder="Znajdź"> 
-
         Szukaj po:
-        <input type="button" value="Nazwie">
-        <input type="button" value="Opisie">
-        <input type="button" value="Kategorii" id="categoryButton">
+        <input type="button" class="buttons1" id="button_1_1" value="Nazwie" onclick="buttons1(1)">
+        <input type="button" class="buttons1" id="button_1_2" value="Opisie" onclick="buttons1(2)">
+        <input type="button" class="buttons1" id="button_1_3" value="Kategorii" onclick="buttons1(3)">
 
         Sortuj po:
-        <input type="button" value="ID">
-        <input type="button" value="Nazwie">
-        <input type="button" value="Opisie">
-        <input type="button" value="Kategorii">
-        <input type="button" value="Ilości">
-        <input type="button" value="Nazwie pudełka">
-        <input type="button" value="Opisie pudełka" id="boxDescButton">
-        <input type="button" value="Malejąco">
+        <input type="button" class="buttons1" id="button_2_1" value="ID" onclick="buttons2(1)">
+        <input type="button" class="buttons1" id="button_2_2" value="Nazwie" onclick="buttons2(2)">
+        <input type="button" class="buttons1" id="button_2_3" value="Opisie" onclick="buttons2(3)">
+        <input type="button" class="buttons1" id="button_2_4" value="Kategorii" onclick="buttons2(4)">
+        <input type="button" class="buttons1" id="button_2_5" value="Ilości" onclick="buttons2(5)">
+        <input type="button" class="buttons1" id="button_2_6" value="Nazwie pudełka" onclick="buttons2(6)">
+        <input type="button" class="buttons1" id="button_2_7" value="Opisie pudełka" onclick="buttons2(7)">
+
+        <input type="button" class="buttons1" id="button_3_1" value="Malejąco">
+        <input type="button" value="Szukaj">
     </div>
     <div id="centralContainer"></div>
+
+    <script src="find.js"></script>
 </body>
 </html>
